@@ -34,8 +34,15 @@ html{
 /* Sectionleft */
 .sectionleft{
     width: 200px;
+    background-color: black;
 }
 
+.logo{
+    width:170px;
+    padding-left: 30px;
+    padding-top: 20px;
+
+}
 
 /* Section right*/
 
