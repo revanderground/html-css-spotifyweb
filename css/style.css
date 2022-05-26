@@ -47,8 +47,8 @@ html{
 }
 
 .item-menu{
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 
 }
 
@@ -68,15 +68,44 @@ html{
     color: var(--darkwhite);
 }
 
+.iconmenusrc{
+    padding-left: 19px;;
+}
+
+.iconmenu-playlist{
+    font-size:2em;
+    color: var(--lightgrey);
+    padding-left: 15px;
+}
+
 .textmenu{
     font-size: 0.7em;
     font-weight: 700;
     color: var(--grey);
     padding-left: 7px;
+    padding-top: 2px;
+
 }
 
 .textmenu-on{
     color: white;
+}
+
+.item-playlist{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.playlist-title{
+    color:white;
+    font-weight: 700;
+    font-size: 0.75em;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+.textmenu-playlist{
+    font-size: 0.85em;
+    padding-top: 7px;
 }
 
 
@@ -113,13 +142,13 @@ header{
 
 
 .menufilter{
-    padding-top: 100px;
+    padding-top: 90px;
     justify-content: center;
 }
 
 .selection{
     color: var(--grey);
-    padding: 0 12px;
+    padding: 5px 12px;
     font-weight: 700;
     font-size: 0.7em;
 }
@@ -170,6 +199,10 @@ header{
     padding-left: 7px;
     padding-top: 10px;
 }
+
+
+
+
 
 
 /* Footer */
