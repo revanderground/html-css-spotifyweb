@@ -138,9 +138,6 @@ header{
 
 }
 
-.boxalbum{
-  
-}
 
 .thumb{
     width: 100%;
@@ -163,7 +160,7 @@ header{
     font-size: 0.9em;
     font-weight: bold;
     padding-top: 10px;
-    padding-bottom: 10px;
+   
 }
 
 .subtitle{
@@ -180,4 +177,23 @@ header{
 footer{
     background-color: var(--darkgrey);
     height: 100px;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    /* Section right*/
+
+    .album{ 
+        width: calc(100% / 4)}
+
+}
+
+@media screen and (max-width: 700px) {
+
+    /* Section right*/
+
+    .album{ 
+        width: calc(100% / 2)}
+
 }
