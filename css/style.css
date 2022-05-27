@@ -21,6 +21,11 @@ html{
     flex-wrap: wrap;
 }
 
+.flexcolumn{
+    display:flex;
+    flex-direction: column;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,22 +35,39 @@ html{
 
 /* DESKTOP FIRST */
 
-
+/* Main */
+main{
+    height: calc(100vh - 90px);
+    overflow: auto;
+}
 
 /* Sectionleft */
 .sectionleft{
     width: 200px;
-    height: calc(100vh - 90px);
     background-color: black;
+
 }
 
 
+.menu{
+    height: calc(100% - 80px);
+    justify-content: flex-start;
+    overflow: hidden;
+}
 
 .logo{
     width:125px;
     padding-left: 15px;
     padding-top: 20px;
     padding-bottom: 20px;
+
+}
+
+.logosmall{
+    width:25px;
+    margin-left: 17px;
+    padding-top: 10px;
+    display:none;
 
 }
 
@@ -64,6 +86,7 @@ html{
 .iconmenu{
     width: 38px;
     padding-left: 15px;
+    color: var(--grey);
 }
 
 .iconmenu-on{
@@ -107,13 +130,87 @@ html{
 }
 
 
+/* list */
+
+.list{
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+ul{
+    padding-left: 10px;
+    list-style-type: none;
+    min-height: 30px;
+  
+}
+
+li{
+    line-height: 1.6em;
+    
+}
+
+/* foot */
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    width:200px;
+    height: 80px;
+}
+
+.install{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.icondownload{
+    width:25px;
+    padding-left: 10px;
+    color: var(--grey);    
+}
+
+
+.subfoot{
+    font-size: 0.7em;
+    color: var(--grey);
+    font-weight: 700;
+    padding-left: 5px;
+}
+
+
+#break{
+    width:80%;
+    background-color: var(--grey);
+    height: 1px;
+    margin-left: 15px;
+}
+
+.profile{
+    padding-left: 15px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+    padding-right: 10px;
+}
+
+.usericon{
+    padding: 2px;
+    height: 23px;
+    width:23px;
+    border-radius: 50%;
+    background-color: var(--grey);
+    color: white;
+    object-fit: cover;
+}
+
+
+
+
 /* Section right*/
 
 .sectionright{
     background-color: var(--darkblue);
-    height: calc(100vh - 90px);
     width: calc(100% - 200px);
-    overflow: auto;
+ 
 }
 
 header{
@@ -216,6 +313,7 @@ footer{
     align-content: center;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 /* Footer left */
@@ -238,7 +336,7 @@ footer{
 }
 
 .status{
-    padding-left: 30px;
+    padding-left: 2vw;
     display:flex;
     flex-direction: row;
 }
@@ -286,27 +384,27 @@ footer{
 
 .iconplayer{
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .iconplayer-play{
     color: white;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
     font-size: 1.8em;
 }
 
 .line100c{
     height: 3.5px;
-    width: 30vw;
+    width: 20vw;
     background-color: var(--grey);
     border-radius: 10px;
 }
 
 .linexc{
     height: 3.5px;
-    width: 6vw;
+    width: 4vw;
     background-color: var(--darkwhite);
     border-radius: 10px;
 }
@@ -344,7 +442,7 @@ footer{
 
 .line100r{
     height: 3.5px;
-    width: 10vw;
+    width: 7.5vw;
     background-color: var(--grey);
     border-radius: 10px;
   
@@ -356,7 +454,7 @@ footer{
 
 .linexr{
     height: 3.5px;
-    width: 2vw;
+    width: 1.5vw;
     background-color: var(--darkwhite);
     border-radius: 10px;
 
@@ -394,4 +492,52 @@ footer{
     .footericon-left{
         padding-top: 1px;
     }
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Section left*/
+
+    .sectionleft{
+        width:45px;
+    }
+
+    .logosmall{
+        display: block;
+        margin-left: 7px;
+    }
+    .textmenu, .logo, .playlist-title, 
+    .item-playlist, .subfoot, .Johndoe > .title,
+     #break {
+        display:none;
+
+    }
+
+    .iconmenu{
+        padding-left: 3px;
+        width:30px;
+    }
+
+    .iconmenu-on{
+        padding-left: 3px;
+        width:30px;
+    }
+
+    .icondownload{  
+        width:27px;
+        
+    }
+
+    .profile{
+        padding-left: 9px;
+    }
+
+    /* section right */
+
+    .sectionright, header{
+        width: calc(100% - 45px)
+        }
+    
+    
+
 }

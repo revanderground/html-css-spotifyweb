@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Spotify</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
@@ -15,11 +15,15 @@
 <body>
 
     <main class="flexrow">
-        <section class="sectionleft">
-            <nav class="menu">
+        <section class="sectionleft flexcolumn">
+            <nav class="menu flexcolumn">
                 <div class="logo">
-                    <img src="img/logo.svg" alt="Spotifylogo">
+                    <img src="img/logo.svg" alt="Spotifylogo">                    
                 </div>
+                <div class="logosmall">
+                    <img src="img/logo-small.svg" alt="spotifylogosmall">
+                </div>
+                
 
                 <div class="item-menu item-menu-on flexrow"><img class="iconmenu iconmenu-on" src="img/home.svg" alt="Home"><span class="textmenu textmenu-on">Home</span></div>       
                 <div class="item-menu flexrow"><img class="iconmenu" src="img/search.svg" alt="Search"><span class="textmenu">Cerca</span></div>    
@@ -28,19 +32,43 @@
                 <div class="playlist-title">PLAYLIST</div>
                 
                 <div class="item-playlist flexrow"><i class="iconmenu-playlist fa-solid fa-square-plus"></i><span class="textmenu textmenu-playlist">Crea Playlist</span></div>    
-                </div>
+               
+                <section class="list">
+                    <ul>
+                        <li class="textmenu">Classic</li>
+                        <li class="textmenu">Rock</li>
+                        <li class="textmenu">Metal</li>
+                        <li class="textmenu">Gothic</li>
+                        <li class="textmenu">Jazz</li>
+                        <li class="textmenu">Pop</li>
+                        <li class="textmenu">Punk</li>
+                        <li class="textmenu">K-pop</li>
+                        
+                    </ul>
+
+                    
+                </section>    
 
             </nav>
 
-            <section class="list">
-
-
-
-            </section>
-
             <section class="foot">
+                <div class="install flexrow">
+                <img class="icondownload" src="img/download.svg" alt=""><span class="subfoot">Installa app</span> 
+                </div>
+
+                <div id="break"></div>
+
+                <div class="Johndoe flexrow">
+                    <div class="profile">
+                        <img class="usericon" src="img/profile.svg" alt="profile">                       </div> 
+                        <div class="title">John Doe</div>
+                    </div>
+       
+                </div>
 
             </section>
+
+
 
         </section>
 
