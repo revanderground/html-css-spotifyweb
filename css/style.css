@@ -50,7 +50,7 @@ main{
 
 
 .menu{
-    height: calc(100% - 80px);
+    min-height: calc(100% - 80px);
     justify-content: flex-start;
    overflow: hidden;
 }
@@ -301,16 +301,42 @@ header{
 
 .thumb{
     width: 100%;
+    position: relative;
+}
+
+
+
+.album:hover .playimage{
+    cursor: pointer;
+    opacity:1;
+}
+
+.album:hover .img-album{
+    cursor: pointer;
+    opacity:.4;
+}
+
+.album:hover .round{
+    cursor: pointer;
+    opacity:.4;
 }
 
 .playimage{
+    position:absolute;
     font-size: xx-large;
     color: white;
-    padding-
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
 }
 
 .img-album{
     width: 100%;
+    opacity:1;
+    display: block;
+    transition: .3s ease;
+    backface-visibility: hidden;
 }
 
 .album{
