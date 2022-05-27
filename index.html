@@ -21,9 +21,9 @@
                     <img src="img/logo.svg" alt="Spotifylogo">
                 </div>
 
-                <div class="item-menu item-menu-on flexrow"><i class="iconmenu iconmenu-on fa-solid fa-house"></i><span class="textmenu textmenu-on">Home</span></div>       
-                <div class="item-menu flexrow"><i class="iconmenu iconmenusrc fa-solid fa-magnifying-glass"></i><span class="textmenu">Cerca</span></div>    
-                <div class="item-menu flexrow"><i class="iconmenu fa-solid fa-photo-film"></i><span class="textmenu">La tua libreria</span></div>    
+                <div class="item-menu item-menu-on flexrow"><img class="iconmenu iconmenu-on" src="img/home.svg" alt="Home"><span class="textmenu textmenu-on">Home</span></div>       
+                <div class="item-menu flexrow"><img class="iconmenu" src="img/search.svg" alt="Search"><span class="textmenu">Cerca</span></div>    
+                <div class="item-menu flexrow"><img class="iconmenu" src="img/libreria.svg" alt=""><span class="textmenu">La tua libreria</span></div>    
                 
                 <div class="playlist-title">PLAYLIST</div>
                 
@@ -143,17 +143,17 @@
                     <div class="subtitle">Più ascolti, più accurati saranno i suggerimenti</div>
                     <div class="boxalbum flexrow">
                         <div class="album">
-                            <div class="thumb">
-                                <img src="img/youg.jpeg" alt="youg" class="img-album">
+                            <div class="thumb round">
+                                <img class="round" src="img/youg.jpeg" alt="youg" class="img-album">
                             </div>
                             <div class="title">Young & Beautiful</div>                    
                         </div>
 
                         <div class="album">
                             <div class="thumb">
-                                <img src="img/player_left.jpg" alt="Stranger things" class="img-album">
+                                <img class="round" src="img/einaudi.jpeg" alt="Einaudi" class="img-album">
                             </div>
-                            <div class="title">Hilltop hoods</div>                            
+                            <div class="title">Einaudi</div>                            
                         </div>
 
                     </div>
@@ -165,7 +165,61 @@
 
     </main>
 
-    <footer>
+    <footer class="flexrow">
+
+        <section class="ftleft flexrow">
+            <div class="info flexrow">
+                <div class="footer-album"><img class="img-footer" src="img/sinister.jpeg" alt=""></div>
+                <div class="footer-words">                    
+                    <div class="footer-name">Sinister</div>
+                    <div class="footer-trackbox">    
+                        <div class="footer-track">Brano</div>
+                        <div class="footer-track">Nome</div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="status">
+                <div class="footericon-left"><i class="fa-regular fa-heart"></i></div>
+                <div class="footericon-left"><i class="fa-regular fa-folder"></i></div>
+            </div>
+           
+        </section>
+
+        <section class="ftcenter">
+            <div class="commands flexrow">  
+                <div class="iconplayer"><i class="fa-solid fa-shuffle"></i></div>
+                <div class="iconplayer"><i class="fa-solid fa-backward-step"></i></div>
+                <div class="iconplayer-play"><i class="playbutton fa-regular fa-circle-play"></i></div>
+                <div class="iconplayer"><i class="fa-solid fa-forward-step"></i></div>
+                <div class="iconplayer"><i class="fa-solid fa-arrow-rotate-right"></i></div>
+
+            </div>
+
+            <div class="time flexrow">
+                <div class="timenumber">0:25</div>
+                <div class="timelinec">
+                    <div class="line100c">
+                        <div class="linexc"></div>
+                    </div>
+                </div>
+                <div class="timenumber">4:35</div>
+
+            </div>
+
+        </section>
+
+        <section class="ftright flexrow">
+            <div class="footericon-right"><i class="fa-solid fa-list"></i></div>
+            <div class="footericon-right"><i class="fa-solid fa-display"></i></div>
+            <div class="footericon-right"><i class="fa-solid fa-volume-high"></i></div>
+            <div class="timeliner">
+                <div class="line100r">
+                    <div class="linexr"></div>
+                </div>
+            </div>
+        </section>
 
     </footer>
     
