@@ -284,6 +284,11 @@ header{
     font-size: 0.7em;
 }
 
+.evi{
+    text-decoration: underline 2px solid greenyellow ;
+    
+}
+
 .bloc{
     padding-left: 15px;
     padding-right: 15px;
@@ -464,7 +469,7 @@ footer{
 }
 
 .iconplayer-play:hover{
-    transform:scale(1.1);
+    transform:scale(1.3);
     cursor: pointer;
 }
 
