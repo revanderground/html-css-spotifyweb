@@ -52,7 +52,7 @@ main{
 .menu{
     height: calc(100% - 80px);
     justify-content: flex-start;
-   
+   overflow: hidden;
 }
 
 .logo{
