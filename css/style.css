@@ -37,14 +37,14 @@ html{
 
 /* Main */
 main{
-    height: calc(100vh - 90px);
-    overflow: auto;
+ 
 }
 
 /* Sectionleft */
 .sectionleft{
     width: 200px;
     background-color: black;
+    height: calc(100vh - 90px);       
 
 }
 
@@ -52,7 +52,7 @@ main{
 .menu{
     height: calc(100% - 80px);
     justify-content: flex-start;
-    overflow: hidden;
+   
 }
 
 .logo{
@@ -108,6 +108,31 @@ main{
 
 }
 
+ .selection:hover, .textmenu:hover,
+ .item-playlist:hover,
+ .textmenu-playlist:hover, 
+ .iconmenu-playlist:hover,
+ .footericon-left:hover,
+ .subfoot:hover, .footer-track:hover
+ {
+    color: white;
+    cursor: pointer;
+}
+
+.footer-trackbox:hover{
+    color: white;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+}
+
+
+.iconplayer{
+    cursor: pointer;
+}
+
+
+
+
 .textmenu-on{
     color: white;
 }
@@ -125,8 +150,11 @@ main{
 }
 
 .textmenu-playlist{
-    font-size: 0.85em;
+    font-size: 0.75em;
     padding-top: 7px;
+    font-weight: 700;
+    color: var(--grey);
+    padding-left: 7px;
 }
 
 
@@ -210,7 +238,8 @@ li{
 .sectionright{
     background-color: var(--darkblue);
     width: calc(100% - 200px);
- 
+    height: calc(100vh - 90px);
+    overflow: auto;
 }
 
 header{
@@ -232,7 +261,14 @@ header{
     color: white;
     border: 1.5px solid white;
     padding: 10px 30px;
+    transition: 0.2s;
 
+}
+
+#button:hover {
+    transform: scale(1.05);
+    border: 1.7px solid white;
+    cursor: pointer;
 }
 
 
@@ -267,6 +303,11 @@ header{
     width: 100%;
 }
 
+.playimage{
+    font-size: xx-large;
+    color: white;
+    padding-
+}
 
 .img-album{
     width: 100%;
@@ -393,7 +434,14 @@ footer{
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     font-size: 1.8em;
+    transition: 0.25s;
 }
+
+.iconplayer-play:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+}
+
 
 .line100c{
     height: 3.5px;
@@ -407,6 +455,11 @@ footer{
     width: 4vw;
     background-color: var(--darkwhite);
     border-radius: 10px;
+}
+
+.linexc:hover, .linexr:hover{
+    background-color: greenyellow;
+    cursor: pointer;
 }
 
 .timelinec{
@@ -438,6 +491,10 @@ footer{
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 5px;
+}
+
+.footericon-right:hover{
+    cursor: pointer;
 }
 
 .line100r{
